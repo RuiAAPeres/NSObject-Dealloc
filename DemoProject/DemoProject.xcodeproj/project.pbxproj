@@ -19,7 +19,6 @@
 		C7F3BD65186613D800C30BA8 /* DemoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3BD64186613D800C30BA8 /* DemoProjectTests.m */; };
 		C7F3BD771866142B00C30BA8 /* APHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3BD701866142B00C30BA8 /* APHAppDelegate.m */; };
 		C7F3BD781866142B00C30BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F3BD721866142B00C30BA8 /* Images.xcassets */; };
-		C7F3BD791866142B00C30BA8 /* DemoProject-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F3BD741866142B00C30BA8 /* DemoProject-Info.plist */; };
 		C7F3BD7A1866142B00C30BA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3BD761866142B00C30BA8 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -265,7 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F3BD781866142B00C30BA8 /* Images.xcassets in Resources */,
-				C7F3BD791866142B00C30BA8 /* DemoProject-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

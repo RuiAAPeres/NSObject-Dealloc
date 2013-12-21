@@ -60,9 +60,7 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
     [self RP_fakeDealloc];
 }
 
-
 #pragma mark - Public Methods
-
 
 + (void)RP_toggleSwizzDealloc
 {
@@ -72,7 +70,6 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
     {
         [swizzledClassesSet removeObject:classDescription];
         swizzInstance([self class],@selector(RP_fakeDealloc),NSSelectorFromString(@"dealloc"));
-        
     }
     else
     {

@@ -24,7 +24,6 @@
 
     for (int i = 0; i < 10; i++)
     {
-        
         APHTestingClass *object = [[APHTestingClass alloc] init];
     }
     
