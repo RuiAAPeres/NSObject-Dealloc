@@ -9,6 +9,7 @@
 #import "APHAppDelegate.h"
 
 #import "NSObject+Dealloc.h"
+#import "APHTestingClass.h"
 
 @implementation APHAppDelegate
 
@@ -23,9 +24,7 @@
     
     for (int i = 0; i < 10; i++)
     {
-        @autoreleasepool {
-            NSObject *object = [[NSObject alloc] init];
-        }
+        APHTestingClass *object = [[APHTestingClass alloc] init];
     }
     
     

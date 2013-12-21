@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C743FFBD186617860032704D /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C743FFBC186617860032704D /* NSObject+Dealloc.m */; };
+		C743FFC118661FD10032704D /* APHTestingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C743FFC018661FD10032704D /* APHTestingClass.m */; };
 		C7F3BD40186613D700C30BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD3F186613D700C30BA8 /* Foundation.framework */; };
 		C7F3BD42186613D700C30BA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */; };
 		C7F3BD44186613D700C30BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD43186613D700C30BA8 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		C743FFBB186617860032704D /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
 		C743FFBC186617860032704D /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
+		C743FFBF18661FD10032704D /* APHTestingClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APHTestingClass.h; sourceTree = "<group>"; };
+		C743FFC018661FD10032704D /* APHTestingClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APHTestingClass.m; sourceTree = "<group>"; };
 		C7F3BD3C186613D700C30BA8 /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3BD3F186613D700C30BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C743FFBE18661F7E0032704D /* Testing Class */ = {
+			isa = PBXGroup;
+			children = (
+				C743FFBF18661FD10032704D /* APHTestingClass.h */,
+				C743FFC018661FD10032704D /* APHTestingClass.m */,
+			);
+			path = "Testing Class";
+			sourceTree = "<group>";
+		};
 		C7F3BD33186613D700C30BA8 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		C7F3BD45186613D800C30BA8 /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				C743FFBE18661F7E0032704D /* Testing Class */,
 				C7F3BD7B186614F100C30BA8 /* NSObject+Dealloc */,
 				C7F3BD6E1866142B00C30BA8 /* App Delegate */,
 				C7F3BD711866142B00C30BA8 /* Resources */,
@@ -289,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F3BD7A1866142B00C30BA8 /* main.m in Sources */,
+				C743FFC118661FD10032704D /* APHTestingClass.m in Sources */,
 				C7F3BD771866142B00C30BA8 /* APHAppDelegate.m in Sources */,
 				C743FFBD186617860032704D /* NSObject+Dealloc.m in Sources */,
 			);
