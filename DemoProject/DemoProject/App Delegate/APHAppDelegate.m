@@ -21,11 +21,18 @@
     [self.window makeKeyAndVisible];
     
     [APHTestingClass RP_toggleSwizzDealloc];
-
+    
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    
     for (int i = 0; i < 10; i++)
     {
         APHTestingClass *object = [[APHTestingClass alloc] init];
     }
+    
+#pragma clang diagnostic pop
+    
     
     
     return YES;

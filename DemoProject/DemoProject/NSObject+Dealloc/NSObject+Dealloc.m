@@ -14,6 +14,8 @@
 static BOOL isSwizzed;
 static NSMutableSet *swizzledClassesSet;
 
+static NSString *const APHDealloc = @"dealloc";
+
 +(void)load
 {
     swizzledClassesSet = [NSMutableSet set];
@@ -69,12 +71,12 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
     if ([swizzledClassesSet containsObject:classDescription])
     {
         [swizzledClassesSet removeObject:classDescription];
-        swizzInstance([self class],@selector(RP_fakeDealloc),NSSelectorFromString(@"dealloc"));
+        swizzInstance([self class],@selector(RP_fakeDealloc),NSSelectorFromString(APHDealloc));
     }
     else
     {
         [swizzledClassesSet addObject:classDescription];
-        swizzInstance([self class],NSSelectorFromString(@"dealloc"),@selector(RP_fakeDealloc));
+        swizzInstance([self class],NSSelectorFromString(APHDealloc),@selector(RP_fakeDealloc));
     }
 }
 
