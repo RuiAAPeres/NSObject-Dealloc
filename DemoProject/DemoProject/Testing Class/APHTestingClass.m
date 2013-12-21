@@ -14,7 +14,7 @@
 
 -(NSString *)deallocDescription
 {
-    return @"This a specific object because...";
+    return @"This a specific description, that can be helpful while debugging";
 }
 
 @end

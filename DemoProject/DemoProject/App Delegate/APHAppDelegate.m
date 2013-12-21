@@ -20,10 +20,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [NSObject RP_swizzDealloc];
-    
+    [APHTestingClass RP_toggleSwizzDealloc];
+
     for (int i = 0; i < 10; i++)
     {
+        
         APHTestingClass *object = [[APHTestingClass alloc] init];
     }
     

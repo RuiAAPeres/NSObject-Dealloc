@@ -12,21 +12,15 @@
 @implementation NSObject (Dealloc)
 
 static BOOL isSwizzed;
+static NSMutableSet *swizzledClassesSet;
 
 +(void)load
 {
+    swizzledClassesSet = [NSMutableSet set];
     isSwizzed = NO;
 }
 
 #pragma mark - Util methods
-
-static void swizzClass(Class class, SEL originalSel, SEL newSel)
-{
-    Method origMethod = class_getClassMethod(class, originalSel);
-    Method newMethod = class_getClassMethod(class, newSel);
-    
-    method_exchangeImplementations(origMethod, newMethod);
-}
 
 static void swizzInstance(Class class, SEL originalSel, SEL newSel)
 {
@@ -40,11 +34,21 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
 
 - (void)printDeallocatedObject
 {
-    NSLog(@"Deallocated->%@",[self.class description]);
+    NSString *classDescription = [[self class] description];
+    
+    if (![swizzledClassesSet containsObject:classDescription])
+    {
+        return;
+    }
+    
+    NSLog(@"Deallocated->%@",self.class);
     
     if ([self respondsToSelector:@selector(deallocDescription)])
     {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         NSLog(@"Dealloc description->%@",[self performSelector:NSSelectorFromString(@"deallocDescription")]);
+#pragma clang diagnostic pop
     }
 }
 
@@ -60,29 +64,21 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
 #pragma mark - Public Methods
 
 
-+ (void)RP_swizzDealloc
++ (void)RP_toggleSwizzDealloc
 {
-    // We won't do anything if it's already swizzed
-    if (isSwizzed)
+    NSString *classDescription = [[self class] description];
+    
+    if ([swizzledClassesSet containsObject:classDescription])
     {
-        return;
+        [swizzledClassesSet removeObject:classDescription];
+        swizzInstance([self class],@selector(RP_fakeDealloc),NSSelectorFromString(@"dealloc"));
+        
     }
-    
-    swizzInstance([self class],NSSelectorFromString(@"dealloc"),@selector(RP_fakeDealloc));
-    
-    isSwizzed = YES;
-}
-
-+ (void)RP_undoSwizzDealloc
-{
-    // We won't do anything if it has not been Swizzed
-    if (!isSwizzed)
+    else
     {
-        return;
+        [swizzledClassesSet addObject:classDescription];
+        swizzInstance([self class],NSSelectorFromString(@"dealloc"),@selector(RP_fakeDealloc));
     }
-    
-    isSwizzed = NO;
-    swizzInstance([self class],@selector(RP_fakeDealloc),NSSelectorFromString(@"dealloc"));
 }
 
 @end

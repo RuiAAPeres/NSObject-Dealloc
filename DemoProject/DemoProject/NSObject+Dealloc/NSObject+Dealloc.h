@@ -18,7 +18,6 @@
 
 @interface NSObject (Dealloc)
 
-- (void)RP_swizzDealloc;
-- (void)RP_undoSwizzDealloc;
++ (void)RP_toggleSwizzDealloc;
 
 @end
