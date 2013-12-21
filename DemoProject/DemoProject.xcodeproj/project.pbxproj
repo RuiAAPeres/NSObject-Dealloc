@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C743FFBD186617860032704D /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C743FFBC186617860032704D /* NSObject+Dealloc.m */; };
 		C7F3BD40186613D700C30BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD3F186613D700C30BA8 /* Foundation.framework */; };
 		C7F3BD42186613D700C30BA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */; };
 		C7F3BD44186613D700C30BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD43186613D700C30BA8 /* UIKit.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C743FFBB186617860032704D /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
+		C743FFBC186617860032704D /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
 		C7F3BD3C186613D700C30BA8 /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3BD3F186613D700C30BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -165,6 +168,8 @@
 		C7F3BD7B186614F100C30BA8 /* NSObject+Dealloc */ = {
 			isa = PBXGroup;
 			children = (
+				C743FFBB186617860032704D /* NSObject+Dealloc.h */,
+				C743FFBC186617860032704D /* NSObject+Dealloc.m */,
 			);
 			path = "NSObject+Dealloc";
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			files = (
 				C7F3BD7A1866142B00C30BA8 /* main.m in Sources */,
 				C7F3BD771866142B00C30BA8 /* APHAppDelegate.m in Sources */,
+				C743FFBD186617860032704D /* NSObject+Dealloc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
