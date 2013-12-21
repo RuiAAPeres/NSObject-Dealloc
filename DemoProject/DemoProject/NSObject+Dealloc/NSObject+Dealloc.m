@@ -40,7 +40,7 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
 
 - (void)printDeallocatedObject
 {
-    NSLog(@"Object's class->%@",[self.class description]);
+    NSLog(@"Deallocated->%@",[self.class description]);
     
     if ([self respondsToSelector:@selector(deallocDescription)])
     {
