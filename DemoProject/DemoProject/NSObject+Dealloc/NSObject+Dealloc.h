@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol NSObjectDeallocProtocol <NSObject>
+
+@required
+
+- (NSString *)deallocDescription;
+
+@end
+
 @interface NSObject (Dealloc)
+
++ (void)RP_swizzDealloc;
++ (void)RP_undoSwizzDealloc;
 
 @end
