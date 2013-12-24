@@ -18,4 +18,6 @@ Advantages
 There are two advantages with this category:
 
 * It allows you to add the deallocation on a class basis. 
-* It allows you to add your own custom message, by using the `NSObjectDeallocProtocol` protocol.
+* It allows you to add your own custom message, by using the `NSObjectDeallocProtocol` protocol. It's useful to distinguish objects of the same class
+
+
