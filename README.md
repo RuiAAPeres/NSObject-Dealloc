@@ -48,7 +48,7 @@ First we turn on the swizzling on the `APHTestingClass`. We then create a 10 obj
 2013-12-25 13:11:09.408 DemoProject[473:70b] Deallocated -> APHTestingClass | This a specific description, that can be helpful while debugging |
 ```
 
-The `| This a specific description, that can be helpful while debugging |` is a custom message that you can add, to further help you debugging. 
+The `| This a specific description, that can be helpful while debugging |` is a custom message that you can add to help you debugging. 
 
 
 
