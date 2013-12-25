@@ -41,7 +41,7 @@ The demo project is quite straightforward:
 #pragma clang diagnostic pop
 ```
 
-First we turn on the swizzling on the `APHTestingClass`. We then create a 10 objects so we can see them been deallocated after:
+First we turn on the swizzling on the `APHTestingClass`. We then create a 10 objects so we can see them be deallocated after:
 
 ```
 2013-12-25 13:11:09.403 DemoProject[473:70b] Deallocated -> APHTestingClass | This a specific description, that can be helpful while debugging |
