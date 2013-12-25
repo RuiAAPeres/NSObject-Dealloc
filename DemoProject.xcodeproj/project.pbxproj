@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C743FFC118661FD10032704D /* APHTestingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C743FFC018661FD10032704D /* APHTestingClass.m */; };
-		C789F457186B6C1300A868AB /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C789F456186B6C1300A868AB /* NSObject+Dealloc.m */; };
+		C789F45D186B70BA00A868AB /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C789F45C186B70BA00A868AB /* NSObject+Dealloc.m */; };
 		C7F3BD40186613D700C30BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD3F186613D700C30BA8 /* Foundation.framework */; };
 		C7F3BD42186613D700C30BA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */; };
 		C7F3BD44186613D700C30BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD43186613D700C30BA8 /* UIKit.framework */; };
@@ -20,8 +20,8 @@
 /* Begin PBXFileReference section */
 		C743FFBF18661FD10032704D /* APHTestingClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APHTestingClass.h; sourceTree = "<group>"; };
 		C743FFC018661FD10032704D /* APHTestingClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APHTestingClass.m; sourceTree = "<group>"; };
-		C789F455186B6C1300A868AB /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
-		C789F456186B6C1300A868AB /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
+		C789F45B186B70BA00A868AB /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
+		C789F45C186B70BA00A868AB /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
 		C7F3BD3C186613D700C30BA8 /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3BD3F186613D700C30BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +64,8 @@
 		C7F3BD33186613D700C30BA8 = {
 			isa = PBXGroup;
 			children = (
+				C789F45B186B70BA00A868AB /* NSObject+Dealloc.h */,
+				C789F45C186B70BA00A868AB /* NSObject+Dealloc.m */,
 				C7F3BD45186613D800C30BA8 /* DemoProject */,
 				C7F3BD5E186613D800C30BA8 /* DemoProjectTests */,
 				C7F3BD3E186613D700C30BA8 /* Frameworks */,
@@ -96,8 +98,6 @@
 		C7F3BD45186613D800C30BA8 /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
-				C789F455186B6C1300A868AB /* NSObject+Dealloc.h */,
-				C789F456186B6C1300A868AB /* NSObject+Dealloc.m */,
 				C743FFBE18661F7E0032704D /* Testing Class */,
 				C7F3BD6E1866142B00C30BA8 /* App Delegate */,
 				C7F3BD711866142B00C30BA8 /* Resources */,
@@ -232,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C789F457186B6C1300A868AB /* NSObject+Dealloc.m in Sources */,
+				C789F45D186B70BA00A868AB /* NSObject+Dealloc.m in Sources */,
 				C7F3BD7A1866142B00C30BA8 /* main.m in Sources */,
 				C743FFC118661FD10032704D /* APHTestingClass.m in Sources */,
 				C7F3BD771866142B00C30BA8 /* APHAppDelegate.m in Sources */,
