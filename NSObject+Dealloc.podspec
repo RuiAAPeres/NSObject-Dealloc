@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSObject+Dealloc"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.summary      = "Category used to know when your object has been deallocated"
   s.homepage     = "https://github.com/RuiAAPeres/NSObject-Dealloc"
