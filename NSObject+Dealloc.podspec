@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.author       = { "R. Peres" => "sauron.is.alive@gmail.com" }
   s.source       = { :git => "https://github.com/RuiAAPeres/NSObject-Dealloc.git", :tag => "1.0"}
   s.platform     = :ios, '5.0'
-  s.source_files = '*.{h,m}'
+  s.source_files = 'NSObject+Dealloc.{h,m}'
   s.requires_arc = true
 end
