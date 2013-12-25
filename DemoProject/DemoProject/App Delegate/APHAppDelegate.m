@@ -22,7 +22,6 @@
     
     [APHTestingClass RP_toggleSwizzDealloc];
     
-    
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     
