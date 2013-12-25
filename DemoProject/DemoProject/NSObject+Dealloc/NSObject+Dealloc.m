@@ -37,21 +37,26 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
 - (void)printDeallocatedObject
 {
     NSString *classDescription = [[self class] description];
+    NSMutableString *descriptionOutputed = [NSMutableString stringWithFormat:@"Deallocated -> %@",[self.class description]];
     
     if (![swizzledClassesSet containsObject:classDescription])
     {
         return;
     }
     
-    NSLog(@"Deallocated->%@",self.class);
     
     if ([self respondsToSelector:@selector(deallocDescription)])
     {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        NSLog(@"Dealloc description->%@",[self performSelector:NSSelectorFromString(@"deallocDescription")]);
+        
+        [descriptionOutputed appendString:[NSString stringWithFormat:@" | %@ |",[self performSelector:NSSelectorFromString(@"deallocDescription")]]];
+        
 #pragma clang diagnostic pop
     }
+
+    
+    NSLog(@"%@",descriptionOutputed);
 }
 
 #pragma mark - Swizzled methods
