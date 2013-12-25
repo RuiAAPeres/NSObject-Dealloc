@@ -7,41 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C743FFBD186617860032704D /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C743FFBC186617860032704D /* NSObject+Dealloc.m */; };
 		C743FFC118661FD10032704D /* APHTestingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C743FFC018661FD10032704D /* APHTestingClass.m */; };
+		C789F457186B6C1300A868AB /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C789F456186B6C1300A868AB /* NSObject+Dealloc.m */; };
 		C7F3BD40186613D700C30BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD3F186613D700C30BA8 /* Foundation.framework */; };
 		C7F3BD42186613D700C30BA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */; };
 		C7F3BD44186613D700C30BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD43186613D700C30BA8 /* UIKit.framework */; };
-		C7F3BD59186613D800C30BA8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD58186613D800C30BA8 /* XCTest.framework */; };
-		C7F3BD5A186613D800C30BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD3F186613D700C30BA8 /* Foundation.framework */; };
-		C7F3BD5B186613D800C30BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F3BD43186613D700C30BA8 /* UIKit.framework */; };
-		C7F3BD63186613D800C30BA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7F3BD61186613D800C30BA8 /* InfoPlist.strings */; };
-		C7F3BD65186613D800C30BA8 /* DemoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3BD64186613D800C30BA8 /* DemoProjectTests.m */; };
 		C7F3BD771866142B00C30BA8 /* APHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3BD701866142B00C30BA8 /* APHAppDelegate.m */; };
 		C7F3BD781866142B00C30BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F3BD721866142B00C30BA8 /* Images.xcassets */; };
 		C7F3BD7A1866142B00C30BA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3BD761866142B00C30BA8 /* main.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C7F3BD5C186613D800C30BA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7F3BD34186613D700C30BA8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7F3BD3B186613D700C30BA8;
-			remoteInfo = DemoProject;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		C743FFBB186617860032704D /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
-		C743FFBC186617860032704D /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
 		C743FFBF18661FD10032704D /* APHTestingClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APHTestingClass.h; sourceTree = "<group>"; };
 		C743FFC018661FD10032704D /* APHTestingClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APHTestingClass.m; sourceTree = "<group>"; };
+		C789F455186B6C1300A868AB /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
+		C789F456186B6C1300A868AB /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
 		C7F3BD3C186613D700C30BA8 /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3BD3F186613D700C30BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7F3BD41186613D700C30BA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C7F3BD43186613D700C30BA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C7F3BD57186613D800C30BA8 /* DemoProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3BD58186613D800C30BA8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C7F3BD60186613D800C30BA8 /* DemoProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoProjectTests-Info.plist"; sourceTree = "<group>"; };
 		C7F3BD62186613D800C30BA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -62,16 +46,6 @@
 				C7F3BD42186613D700C30BA8 /* CoreGraphics.framework in Frameworks */,
 				C7F3BD44186613D700C30BA8 /* UIKit.framework in Frameworks */,
 				C7F3BD40186613D700C30BA8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F3BD54186613D800C30BA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7F3BD59186613D800C30BA8 /* XCTest.framework in Frameworks */,
-				C7F3BD5B186613D800C30BA8 /* UIKit.framework in Frameworks */,
-				C7F3BD5A186613D800C30BA8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				C7F3BD3C186613D700C30BA8 /* DemoProject.app */,
-				C7F3BD57186613D800C30BA8 /* DemoProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,8 +96,9 @@
 		C7F3BD45186613D800C30BA8 /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				C789F455186B6C1300A868AB /* NSObject+Dealloc.h */,
+				C789F456186B6C1300A868AB /* NSObject+Dealloc.m */,
 				C743FFBE18661F7E0032704D /* Testing Class */,
-				C7F3BD7B186614F100C30BA8 /* NSObject+Dealloc */,
 				C7F3BD6E1866142B00C30BA8 /* App Delegate */,
 				C7F3BD711866142B00C30BA8 /* Resources */,
 				C7F3BD731866142B00C30BA8 /* Supporting Files */,
@@ -177,15 +151,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C7F3BD7B186614F100C30BA8 /* NSObject+Dealloc */ = {
-			isa = PBXGroup;
-			children = (
-				C743FFBB186617860032704D /* NSObject+Dealloc.h */,
-				C743FFBC186617860032704D /* NSObject+Dealloc.m */,
-			);
-			path = "NSObject+Dealloc";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,24 +172,6 @@
 			productReference = C7F3BD3C186613D700C30BA8 /* DemoProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C7F3BD56186613D800C30BA8 /* DemoProjectTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C7F3BD6B186613D800C30BA8 /* Build configuration list for PBXNativeTarget "DemoProjectTests" */;
-			buildPhases = (
-				C7F3BD53186613D800C30BA8 /* Sources */,
-				C7F3BD54186613D800C30BA8 /* Frameworks */,
-				C7F3BD55186613D800C30BA8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C7F3BD5D186613D800C30BA8 /* PBXTargetDependency */,
-			);
-			name = DemoProjectTests;
-			productName = DemoProjectTests;
-			productReference = C7F3BD57186613D800C30BA8 /* DemoProjectTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,11 +181,6 @@
 				CLASSPREFIX = APH;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Aphely;
-				TargetAttributes = {
-					C7F3BD56186613D800C30BA8 = {
-						TestTargetID = C7F3BD3B186613D700C30BA8;
-					};
-				};
 			};
 			buildConfigurationList = C7F3BD37186613D700C30BA8 /* Build configuration list for PBXProject "DemoProject" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -253,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				C7F3BD3B186613D700C30BA8 /* DemoProject */,
-				C7F3BD56186613D800C30BA8 /* DemoProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,14 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F3BD781866142B00C30BA8 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F3BD55186613D800C30BA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7F3BD63186613D800C30BA8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,30 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C789F457186B6C1300A868AB /* NSObject+Dealloc.m in Sources */,
 				C7F3BD7A1866142B00C30BA8 /* main.m in Sources */,
 				C743FFC118661FD10032704D /* APHTestingClass.m in Sources */,
 				C7F3BD771866142B00C30BA8 /* APHAppDelegate.m in Sources */,
-				C743FFBD186617860032704D /* NSObject+Dealloc.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F3BD53186613D800C30BA8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7F3BD65186613D800C30BA8 /* DemoProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C7F3BD5D186613D800C30BA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C7F3BD3B186613D700C30BA8 /* DemoProject */;
-			targetProxy = C7F3BD5C186613D800C30BA8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C7F3BD61186613D800C30BA8 /* InfoPlist.strings */ = {
@@ -460,48 +377,6 @@
 			};
 			name = Release;
 		};
-		C7F3BD6C186613D800C30BA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoProject.app/DemoProject";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoProject/DemoProject-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DemoProjectTests/DemoProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C7F3BD6D186613D800C30BA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoProject.app/DemoProject";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoProject/DemoProject-Prefix.pch";
-				INFOPLIST_FILE = "DemoProjectTests/DemoProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -519,15 +394,6 @@
 			buildConfigurations = (
 				C7F3BD69186613D800C30BA8 /* Debug */,
 				C7F3BD6A186613D800C30BA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7F3BD6B186613D800C30BA8 /* Build configuration list for PBXNativeTarget "DemoProjectTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C7F3BD6C186613D800C30BA8 /* Debug */,
-				C7F3BD6D186613D800C30BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
