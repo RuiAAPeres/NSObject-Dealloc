@@ -51,5 +51,18 @@ First we turn on the swizzling on the `APHTestingClass`. We then create a 10 obj
 The `| This a specific description, that can be helpful while debugging |` is a custom message that you can add to help you debugging. 
 
 
+------------------------------------
+Versus NSZombies
+============
+
+From the documentation:
+
+> A common type of bug when programming with Cocoa is over-releasing an object. This typically causes your 
+> application to crash, but the crash occurs after the last reference count is released (when you try to message 
+> the freed object), which is usually quite removed from the original bug. NSZombieEnabled is your best bet for 
+> debugging this sort of problems; it will uncover any attempt to interact with a freed object.
+
+
+`NSZombies` shows us where we are over releasing an object. NSObject+Dealloc goal, is to aid the dev knowing when, and how many times, the dealloc method of an instance of a given class is called.
 
 
