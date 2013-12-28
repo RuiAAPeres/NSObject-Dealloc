@@ -11,15 +11,13 @@
 
 @implementation NSObject (Dealloc)
 
-static BOOL isSwizzed;
 static NSMutableSet *swizzledClassesSet;
 
 static NSString *const APHDealloc = @"dealloc";
 
-+(void)load
++ (void)load
 {
     swizzledClassesSet = [NSMutableSet set];
-    isSwizzed = NO;
 }
 
 #pragma mark - Util methods
@@ -44,7 +42,6 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
         return;
     }
     
-    
     if ([self respondsToSelector:@selector(deallocDescription)])
     {
 #pragma clang diagnostic push
@@ -55,7 +52,6 @@ static void swizzInstance(Class class, SEL originalSel, SEL newSel)
 #pragma clang diagnostic pop
     }
 
-    
     NSLog(@"%@",descriptionOutputed);
 }
 
